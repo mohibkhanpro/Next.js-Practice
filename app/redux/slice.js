@@ -13,7 +13,7 @@ const Slice = createSlice({
     addUsers: (state, action) => {
       const data = {
         id: nanoid(),
-        todo: action.payload,
+        name: action.payload,
       };
       state.users.push(data);
       //   console.log(current(state.users));
