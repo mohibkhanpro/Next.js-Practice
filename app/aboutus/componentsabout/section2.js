@@ -1,12 +1,11 @@
 "use client";
 import { removeUsers } from "@/app/redux/slice";
-import { REM } from "next/font/google";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
 const Section2 = () => {
-  const userData = useSelector((data) => data.users);
+  const userData = useSelector((data) => data.userData.users);
   console.log(userData);
   const dispatch = useDispatch();
   return (
